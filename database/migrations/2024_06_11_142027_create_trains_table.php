@@ -30,6 +30,10 @@ return new class extends Migration
      *  'arrival_station' VARCHAR(255) NOT NULL,
      *  'departure_time' TIME NOT NULL,
      *  'arrival_time' TIME NOT NULL,
+     *  
+     * 'platform' Unsigned SMALLINT NOT NULL, // in add_platform_to_table.php
+     *  
+     * 
      *  'train_code' Unsigned SMALLINT NOT NULL,
      *  'train_cars' Unsigned SMALLINT,
      *  'is_on_time' Unsigned TINYINT NOT NULL DEFAULT(1),
@@ -46,6 +50,7 @@ return new class extends Migration
         Schema::create('trains', function (Blueprint $table) {
             $table->id();
             $table->string('company');
+            
             $table->string('departure_station');
             $table->string('arrival_station');
             $table->time('departure_time');

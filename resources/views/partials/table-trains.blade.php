@@ -1,5 +1,6 @@
 {{-- 
     Azienda
+    data Biiglietto
     Stazione di partenza
     Stazione di arrivo
     Orario di partenza
@@ -15,6 +16,7 @@
         <tr>
             <th scope="col">N.</th>
             <th scope="col">Compagnia</th>
+            <th scope="col">Data</th>
             <th scope="col">Stazione di partenza</th>
             <th scope="col">Stazione di arrivo</th>
             <th scope="col">Orario di partenza</th>
@@ -29,8 +31,9 @@
     <tbody>
         @foreach ($trains as $train)
             <tr>
-                <th scope="row">{{ $train->id }}</th>
+                <th scope="row">{{ $train->id - 2 }}</th>
                 <td>{{ $train->company }}</td>
+                <td>{{ $train->date_ticket }}</td>
                 <td>{{ $train->departure_station }}</td>
                 <td>{{ $train->arrival_station }}</td>
                 <td>{{ $train->departure_time }}</td>
