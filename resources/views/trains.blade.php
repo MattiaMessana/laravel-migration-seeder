@@ -3,7 +3,7 @@
 @section('content')
     <div class="container mt-4">
 
-        <h1>Treni</h1>
+        <h1>Partenze Odierne</h1>
 
         <div class="container mt-3">
 

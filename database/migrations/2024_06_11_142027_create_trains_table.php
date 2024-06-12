@@ -34,9 +34,10 @@ return new class extends Migration
      *  'train_cars' Unsigned SMALLINT,
      *  'is_on_time' Unsigned TINYINT NOT NULL DEFAULT(1),
      *  'is_deleted' Unsigned TINYINT NOT NULL DEFAULT(0),
-     *  ‘created_at’ TIMESTAMP NULL,  à creati per seguire ultimo inserimento
-     *  ‘updated_at’ TIMESTAMP NULL,  à creati per seguire ultimo aggiornamento
-     *  ‘PRIMARY KEY(‘id’)
+     * 
+     *  'created_at' TIMESTAMP NULL,
+     *  'updated_at' TIMESTAMP NULL,
+     *   PRIMARY KEY('id')
      * );
      * 
      */

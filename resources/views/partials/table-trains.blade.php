@@ -10,15 +10,16 @@
     Cancellato 
 --}}
 
-<table class="table">
+<table class="table table-dark table-hover">
     <thead>
         <tr>
             <th scope="col">N.</th>
-            <th scope="col">Azienda</th>
+            <th scope="col">Compagnia</th>
             <th scope="col">Stazione di partenza</th>
             <th scope="col">Stazione di arrivo</th>
             <th scope="col">Orario di partenza</th>
             <th scope="col">Orario di arrivo</th>
+            <th scope="col">Binario</th>
             <th scope="col">Codice Treno</th>
             <th scope="col">Numero Carrozze</th>
             <th scope="col">In orario</th>
@@ -34,6 +35,7 @@
                 <td>{{ $train->arrival_station }}</td>
                 <td>{{ $train->departure_time }}</td>
                 <td>{{ $train->arrival_time }}</td>
+                <td>{{$train->platform}}</td>
                 <td>{{ $train->train_code }}</td>
                 <td>{{ $train->train_cars }}</td>
                 <td>
